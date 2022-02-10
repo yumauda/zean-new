@@ -12,8 +12,11 @@
   }
 }
 .p-top-service__img {
-  width: 58.5%;
   position: relative;
+  width: 100%;
+  @include mq(md) {
+    width: 58.5%;
+  }
 }
 .p-top-service__img::before {
   padding-top: 46.34%;
