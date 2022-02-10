@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.p-top-original {
+  background: $section-title-color;
+  @include mq(md) {
+    padding-top: rem(90);
+    padding-bottom: rem(70);
+  }
+}
+.p-top-original__content {
+  margin-top: rem(50);
+}
+.p-top-original__contact {
+  display: flex;
+  align-items: center;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+    max-width: rem(900);
+    width: 100%;
+  }
+}
+.p-top-original__contact-img {
+  max-width: rem(180);
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    margin-right: rem(130);
+  }
+}
+.p-top-original__contact-img::before {
+  padding-top: 97%;
+  display: block;
+  content: "";
+}
+.p-top-original__contact-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include mq(md) {
+    left: 120%;
+  }
+}
+.p-top-original__contact-title {
+  font-family: $title-font-family;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: rem(32);
+}
+.p-top-original__contact-btn-wrapper {
+  text-align: right;
+  margin-right: rem(75);
+  position: relative;
+  @include mq(md) {
+    margin-top: rem(20);
+  }
+}
+.p-top-original__contact-btn {
+  text-transform: uppercase;
+  font-family: $title-font-family;
+  font-size: rem(14);
+  width: rem(130);
+}
+.p-top-original__contact-btn::before {
+  position: absolute;
+  content: "";
+  background: url(/images/common/submit-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(30);
+  height: rem(30);
+  top: rem(-2);
+  right: rem(-40);
+}

@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.p-breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: rem(12);
+}
+.p-breadcrumbs span {
+    margin-left: rem(10);
+    margin-right: rem(10);
+}

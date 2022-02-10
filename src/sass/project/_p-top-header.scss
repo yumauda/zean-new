@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.p-top-header {
+}
+.p-top-header__content {
+  display: none;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    padding-left: rem(30);
+    padding-right: rem(15);
+    position: relative;
+  }
+}
+.p-top-header__logo-wrapper {
+  @include mq(md){
+    position: absolute;
+    content: '';
+    top: rem(30);
+  }
+}
+.p-top-header__link img {
+  width: rem(50);
+  height: rem(50);
+}
+.p-top-header__nav {
+  font-family: $header-font-family;
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  height: rem(50);
+}
+.p-top-header__nav > .p-top-header__list {
+  display: inline-block;
+  position: relative;
+  padding-top: rem(15);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  padding-bottom: rem(15);
+}
+.p-top-header__nav > .p-top-header__list > .p-top-header__under {
+  display: none;
+}
+.p-top-header__list:hover {
+  background: $section-title-color;
+  color: $white;
+}
+.p-top-header__under li {
+  margin-top: rem(15);
+}
+.p-top-header__nav > .p-top-header__list:hover .p-top-header__under {
+  display: block;
+  position: absolute;
+  padding-top: 0;
+  padding-bottom: rem(15);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  margin: 0;
+  top: 100%;
+  left: 0;
+  right: 0;
+  font-size: rem(12);
+  color: $black;
+  background: $section-title-color;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+.p-top-header__list {
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.p-top-header__list::before{
+  position: absolute;
+  content: '';
+  width: rem(1);
+  height: rem(50);
+  background: $black;
+  top: 0;
+  left: 0;
+}
+
+.p-top-header__list-carts {
+  display: flex;
+  align-items: center;
+}
+.p-top-header__list-carts img {
+  width: rem(25);
+  height: rem(25);
+}
+.p-top-header__list-carts p {
+  margin-left: rem(8);
+}
+.p-top-header__under-link {
+  transition: all 0.3s ease;
+}
+.p-top-header__under-link:hover {
+}
+.p-top-header__list-carts p {
+  margin-left: rem(8);
+}
+.p-top-header__under-link {
+  transition: all 0.3s ease;
+}
+.p-top-header__under-link:hover {
+  color: $black;
+}

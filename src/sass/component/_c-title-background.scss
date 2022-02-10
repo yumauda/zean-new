@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.c-title-background {
+  position: absolute;
+  content: "";
+  left: 0;
+  background: $black;
+  height: rem(50);
+  width: (145 / 375) * 100vw;
+  @include mq(md){
+    width: (300 / 1400) * 100vw;
+  }
+}
+.c-title-background--long {
+  width: (470 / 1400) * 100vw;
+}

@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.l-breadcrumbs {
+  max-width: rem(1140);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 rem(20);
+  margin-top: rem(20);
+}

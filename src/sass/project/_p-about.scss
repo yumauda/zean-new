@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.p-about {
+  padding-bottom: rem(60);
+  @include mq(md) {
+    padding-top: rem(170);
+    padding-bottom: rem(86);
+  }
+}
+.p-about__content {
+  max-width: rem(600);
+  width: 100%;
+  margin-top: rem(90);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    margin: 0 auto;
+  }
+}
+.p-about__details-row {
+  @include mq(md) {
+    display: flex;
+  }
+}
+.p-about__details-row + .p-about__details-row {
+  margin-top: rem(55);
+}
+.p-about__title {
+  font-size: rem(14);
+  @include mq(md) {
+    font-weight: 700;
+    width: 130px;
+    padding-top: rem(3);
+  }
+}
+.p-about__text {
+  width: 100%;
+  @include mq(md) {
+    margin-left: rem(20);
+  }
+}
+.p-about__text--tel {
+  width: 100%;
+}
+.p-about__text-wrapper {
+  width: 100%;
+  @include mq(md) {
+    margin-left: rem(20);
+  }
+}
+.p-about__btn-wrapper {
+  text-align: center;
+  margin-top: rem(100);
+  @include mq(md) {
+    margin-top: rem(145);
+  }
+}

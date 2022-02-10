@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-btn {
+  font-size: rem(14);
+  font-family: $title-font-family;
+  text-transform: uppercase;
+  color: $section-title-color;
+  padding-right: rem(40);
+  position: relative;
+}
+.c-btn::before {
+  position: absolute;
+  content: "";
+  background-image: url(/images/common/top-read-more.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: rem(30);
+  height: rem(30);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

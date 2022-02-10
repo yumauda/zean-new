@@ -1,0 +1,142 @@
+@use "global" as *;
+
+.p-single {
+  padding-bottom: rem(60);
+  padding-top: rem(120);
+  @include mq(md) {
+    padding-top: rem(80);
+  }
+}
+.p-single__content {
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
+  @include mq(md) {
+    max-width: rem(1090);
+    display: flex;
+  }
+}
+.p-single__images {
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(520);
+    margin-right: rem(65);
+  }
+}
+.p-single__detail {
+  margin-top: rem(55);
+  @include mq(md) {
+    max-width: rem(505);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.p-single__name {
+}
+.p-single__tag-wrapper {
+  margin-top: rem(25);
+}
+.p-single__data {
+  max-width: rem(300);
+  width: 100%;
+  margin-left: auto;
+  margin-top: rem(38);
+}
+.p-single__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.p-single__price + .p-single__price {
+  margin-top: rem(20);
+}
+.p-single__text-wrapper {
+  margin-top: rem(40);
+}
+.p-single__data-title {
+  width: 80px;
+}
+.p-single__tag {
+  border-bottom: 1px solid #000;
+}
+.p-single__tag + .p-single__tag {
+  margin-left: rem(20);
+}
+.p-single__choose-wrapper {
+  width: rem(180);
+  height: rem(30);
+  border: 1px solid #000;
+  border-radius: rem(15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(14);
+}
+.p-single__type {
+  margin-top: rem(20);
+  font-size: rem(14);
+}
+.p-single__btn-wrapper {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(27);
+  }
+}
+.p-single__enter-wrapper {
+  max-width: rem(400);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: rem(60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $section-title-color;
+  border: 1px solid #000;
+  @include mq(md) {
+    margin-right: initial;
+    width: rem(320);
+  }
+}
+.p-single__enter {
+  color: $black;
+  font-size: rem(20);
+  font-weight: 700;
+}
+.p-single__term-wrapper {
+  max-width: rem(240);
+  width: 100%;
+  margin-left: auto;
+}
+.p-single__term {
+  font-size: rem(14);
+  border-bottom: 1px solid #000;
+}
+.p-single__contact-wrapper {
+  max-width: rem(400);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: rem(60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a0a0a0;
+  margin-top: rem(25);
+  @include mq(md) {
+    width: rem(320);
+    margin-right: initial;
+  }
+}
+.p-single__contact {
+  font-size: rem(16);
+  color: $white;
+  font-weight: 700;
+}
+.p-single__back-btn {
+  margin-top: rem(50);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(96);
+  }
+}

@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.p-card {
+  width: calc(50% - 20px * 1 / 2);
+  margin-left: rem(20);
+  @include mq(md) {
+    width: calc(25% - 42px * 3 / 4);
+    margin-left: rem(42);
+  }
+}
+.p-card:hover {
+  color: inherit;
+  transition: opacity 0.3s;
+  @include mq("md") {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.p-card:nth-child(2n + 1) {
+  margin-left: 0;
+  @include mq(md) {
+    margin-left: rem(42);
+  }
+}
+.p-card:nth-child(n + 3) {
+  margin-top: rem(35);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
+.p-card__img {
+  width: 100%;
+  position: relative;
+}
+.p-card__img::before {
+  padding-top: 75%;
+  display: block;
+  content: "";
+}
+.p-card__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-card__text {
+  margin-top: rem(20);
+}
+.p-card__price {
+  text-align: right;
+  font-weight: 700;
+}

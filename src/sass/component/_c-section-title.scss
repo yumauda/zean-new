@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.c-section-title {
+  color: $section-title-color;
+  font-size: rem(32);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $title-font-family;
+  display: inline-block;
+  padding-right: rem(20);
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  z-index: 9999;
+}
+.c-section-title:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  bottom: rem(-3);
+  width: 132%;
+  display: block;
+  background: #000;
+  opacity: 1;
+  z-index: -1;
+  transition: 0.3s;
+  @include mq(md) {
+    width: 112%;
+  }
+}
+.c-section-title--goods {
+  color: $section-title-color;
+  font-size: rem(32);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $title-font-family;
+  display: inline-block;
+  padding-right: rem(20);
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  z-index: 9999;
+}
+.c-section-title--goods::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  bottom: rem(-3);
+  width: 185%;
+  display: block;
+  background: #000;
+  opacity: 1;
+  z-index: -1;
+  transition: 0.3s;
+  @include mq(md) {
+    width: 128%;
+  }
+}

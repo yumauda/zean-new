@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.gallery {
+  width: 100%;
+  max-width: rem(520);
+  margin: 0 auto;
+  overflow: hidden;
+
+  //メインスライド
+  &-slider {
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px 0;
+
+    .swiper-slide {
+      width: auto;
+
+      img {
+        display: block;
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  //サムネイルスライド
+  &-thumbs {
+    display: flex;
+    padding: 0;
+    margin-top: rem(20);
+
+    .swiper-slide {
+      text-align: center;
+      overflow: hidden;
+      opacity: 0.1;
+      width: calc(33.3333% - 20px * 2 / 3);
+
+      &-active {
+        opacity: 1;
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+.p-swiper__img {
+  width: 100%;
+  position: relative;
+}
+.p-swiper__img::before {
+  padding-top: 75%;
+  display: block;
+  content: "";
+}
+.p-swiper__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-swiper__img--thumb {
+  width: 100%;
+  position: relative;
+}
+.p-swiper__img--thumb::before {
+  padding-top: 75%;
+  display: block;
+  content: "";
+}
+.p-swiper__img--thumb img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

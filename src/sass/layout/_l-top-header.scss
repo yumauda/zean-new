@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.l-top-header {
+  height: rem(100);
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}

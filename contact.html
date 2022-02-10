@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- meta情報 -->
+    <title>zeangrosssite</title>
+    <meta name="description" content="zeangrossお問い合わせページ" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- css -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/gsap.js"></script>
+  </head>
+  <body>
+    <header class="l-page-header p-page-header">
+      <div class="p-page-header__sp-nav">
+          <div class="p-page-header__sp-wrapper">
+              <a href="#" class="p-page-header__img-wrapper">
+                  <img src="/images/common/top-logo.png" alt="">
+              </a>
+              <div class="p-page-header__sp-right">
+                  <a href="#" class="p-page-header__cart">
+                      <img src="/images/common/header-cart.png" alt="ショッピングカート">
+                      <span>(0)</span>
+                  </a>
+                  <div class="p-page-header__drawer p-drawer-icon">
+                      <div class="p-drawer-icon__bars">
+                      <span class="p-drawer-icon__bar1"></span>
+                      <span class="p-drawer-icon__bar2"></span>
+                      <span class="p-drawer-icon__bar3"></span>
+                      </div>
+                  </div>
+                  <div class="p-drawer-content">
+                      <div class="p-drawer-content__items">
+                      <div class="p-drawer-content__item"><a href="/service.html">service</a></div>
+                      <div class="p-drawer-content__item"><a href="/guide.html">shop guide</a></div>
+                      <div class="p-drawer-content__item"><a href="/about.html">about us</a></div>
+                      <div class="p-drawer-content__item"><a href="/contact.html">contact</a></div>
+                      <div class="p-drawer-content__item"><a href="/home.html">items</a></div>
+                      </div>
+                  </div>
+                  <div class="p-drawer-background"></div>
+              </div>
+          </div>
+      </div>
+      <div class="p-page-header__pc-nav">
+        <div class="p-page-header__pc-nav-wrapper p-pc-nav">
+            <ul class="p-pc-nav__lists1">
+                <li class="p-pc-nav__list">
+                  <div class="p-drawer-icon p-drawer-icon--ml30">
+                    <div class="p-drawer-icon__bars">
+                      <span class="p-drawer-icon__bar1"></span>
+                      <span class="p-drawer-icon__bar2"></span>
+                      <span class="p-drawer-icon__bar3"></span>
+                    </div>
+                  </div>
+                  <div class="p-drawer-content">
+                    <div class="p-drawer-content__items">
+                      <div class="p-drawer-content__item"><a href="/index.html">home</a></div>
+                      <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/works')); ?>">works</a></div>
+                      <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/about')); ?>">about us</a></div>
+                      <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/contact')); ?>">contact</a></div>
+                    </div>
+                  </div>
+                  <div class="p-drawer-background"></div>
+                </li>
+                <li class="p-pc-nav__list">
+                    <a href="/service.html">service</a>
+                </li>
+                <li class="p-pc-nav__list">
+                    <a href="/guide.html">shop guide</a>
+                </li>
+                <li class="p-pc-nav__list">
+                    <a href="/about.html">about us</a>
+                </li>
+                <li class="p-pc-nav__list">
+                    <a href="/contact.html">contact</a>
+                </li>
+            </ul>
+            <div class="p-pc-nav__logo-wrapper">
+              <a href="/" class="p-pc-nav__logo">
+                  <img src="/images/common/pc-logo.png" alt="ジーングロス">
+              </a>
+            </div>
+            <ul class="p-pc-nav__lists2">
+              <li class="p-pc-nav__list p-pc-nav__list2 p-pc-nav__lists2--right">
+                  <a href="">items</a>
+              </li>
+              <li class="p-pc-nav__list p-pc-nav__list2">
+                <a href="#">original goods</a>
+                <ul class="p-pc-nav__under">
+                  <li><a class="p-top-header__under-link" href="#">株式会社ジーングロス</a></li>
+                  <li><a class="p-top-header__under-link" href="#">ここに企業名が入ります</a></li>
+                  <li><a class="p-top-header__under-link" href="#">ここに企業名が入ります</a></li>
+                  <li><a class="p-top-header__under-link" href="#">ここに企業名が入ります</a></li>
+                  <li><a class="p-top-header__under-link" href="#">ここに企業名が入ります</a></li>
+                </ul>
+              </li>
+              <li class="p-pc-nav__list2">
+                <div class="p-top-header__list-carts">
+                  <a href="#">
+                    <img src="/images/common/header-cart.png" alt="">
+                  </a>
+                  <p>(0)</p>
+                </div>
+              </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  </header>
+    <section class="l-contact-mv p-contact-mv">
+        <div class="p-contact-mv__content">
+          <span class="p-contact-mv__point1">“</span>
+          <h1 class="c-mv-title js-page-title">contact</h1>
+          <span class="p-contact-mv__point2">”</span>
+        </div>
+    </section>
+    <div class="l-breadcrumbs">
+      <div class="p-breadcrumbs">
+        <a href="#" class="p-breadcrumbs__link">ショップホーム</a>
+        <span>＞</span>
+        <p class="p-breadcrumbs__text">お問い合わせ</p>
+      </div>
+    </div>
+    <section class="l-caution p-caution">
+        <div class="l-inner">
+            <div class="p-caution__content">
+                <p class="p-caution__text c-text--privacy">当店に対するお問い合わせなど、こちらのフォームよりお気軽にお尋ねください。</p>
+                <p class="p-caution__text c-text--privacy">※全項目入力が必須です</p>
+                <p class="p-caution__text c-text--privacy">※メールアドレスは正しくご記入ください。</p>
+            </div>
+        </div>
+    </section>
+    <section class="l-form p-form">
+        <div class="p-form__form">
+                <dl class="p-form__dl">
+                    <div class="p-form__row">
+                        <dt class="p-form__title"><label for="your-name">お名前</label></dt>
+                        <dd class="p-form__input-area"><input type="text" id="your-name"></dd>
+                    </div>
+                    <div class="p-form__row">
+                        <dt class="p-form__title"><label for="your-email">メールアドレス</label></dt>
+                        <dd class="p-form__input-area"><input type="email" id="your-email"></dd>
+                    </div>
+                    <div class="p-form__row">
+                        <dt class="p-form__title"><label for="your-tel">電話番号</label></dt>
+                        <dd class="p-form__input-area"><input type="text" id="your-tel"></dd>
+                    </div>
+                    <div class="p-form__row">
+                        <dt class="p-form__title"><label for="your-title">お問い合わせタイトル</label></dt>
+                        <dd class="p-form__input-area"><input type="text" id="your-title"></dd>
+                    </div>
+                    <div class="p-form__row--textarea">
+                        <dt class="p-form__title"><label for="your-question">お問い合わせ内容</label></dt>
+                        <dd class="p-form__input-area"><textarea name="" id="your-question"></textarea></dd>
+                    </div>
+                    <div class="p-form__button-wrapper">
+                      <div class="p-form__button">
+                          <input type="submit" value="送　信">
+                      </div>
+                    </div>
+                </dl>
+            </div>
+    </section>
+    <footer class="l-footer p-footer">
+      <div class="l-inner">
+        <div class="p-footer__content-wrapper">
+          <div class="p-footer__logo">
+            <a href="#" class="p-footer__logo-link">
+              <img src="./images/common/footer-logo.png" alt="ジーングロス" />
+            </a>
+          </div>
+          <div class="p-footer__content">
+            <ul class="p-footer__lists">
+              <li class="p-footer__list">
+                <a href="#" class="p-footer__link">ショップホーム</a>
+              </li>
+              <div class="p-footer__line"></div>
+              <li class="p-footer__list">
+                <a href="#" class="p-footer__link">サービス内容</a>
+              </li>
+              <div class="p-footer__line"></div>
+              <li class="p-footer__list">
+                <a href="#" class="p-footer__link">企業情報</a>
+              </li>
+              <div class="p-footer__line"></div>
+              <li class="p-footer__list">
+                <a href="#" class="p-footer__link">お問い合わせ</a>
+              </li>
+            </ul>
+            <ul class="p-footer__lists">
+              <li class="p-footer__list">
+                <a href="#" class="p-footer__link">お支払い方法について</a>
+              </li>
+              <div class="p-footer__line"></div>
+              <li class="p-footer__list">
+                <a href="#" class="p-footer__link">配送方法・送料について</a>
+              </li>
+              <div class="p-footer__line"></div>
+              <li class="p-footer__list">
+                <a href="#" class="p-footer__link">返品について</a>
+              </li>
+              <div class="p-footer__line"></div>
+              <li class="p-footer__list">
+                <a href="#" class="p-footer__link">特定商取引法に基づく表記</a>
+              </li>
+              <div class="p-footer__line"></div>
+              <li class="p-footer__list">
+                <a href="#" class="p-footer__link">プライバシーポリシー</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="p-footer__small">
+        <small>©2022 jeengross.</small>
+      </div>
+    </footer>
+  </body>
+</html>

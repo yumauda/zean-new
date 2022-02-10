@@ -1,0 +1,120 @@
+@use "global" as *;
+
+.p-guide {
+  padding-bottom: rem(86);
+}
+.p-guide__content-wrapper {
+  @include mq(md) {
+    max-width: rem(660);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: rem(180);
+  }
+}
+.p-guide__content {
+  margin-top: rem(70);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
+.p-guide__content + .p-guide__content {
+  border-top: 1px solid #000;
+  margin-top: rem(120);
+  padding-top: rem(80);
+  @include mq(md) {
+    border-top: none;
+    padding-top: initial;
+  }
+}
+.p-guide__title-wrapper {
+  text-align: center;
+}
+.p-guide__about {
+  margin-top: rem(60);
+}
+.p-guide__credit-wrapper {
+  display: flex;
+  align-items: center;
+}
+.p-guide__credit {
+  font-weight: bold;
+  margin-right: rem(20);
+}
+.p-guide__credit-text {
+}
+.p-guide-row {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.p-guide-row__left {
+  @include mq(md) {
+    width: 200px;
+  }
+}
+.p-guide-row__right-wrapper {
+  @include mq(md) {
+    width: 450px;
+  }
+}
+.p-guide-row__right + .p-guide-row__right {
+  margin-top: rem(40);
+}
+.p-guide-row__right-list {
+  line-height: 1.625;
+  padding-left: rem(15);
+}
+.p-guide__company {
+}
+.p-guide__company-row {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.p-guide__company-row + .p-guide__company-row {
+  margin-top: rem(55);
+}
+.p-guide__company-title {
+  font-size: rem(14);
+  font-weight: 700;
+  @include mq(md) {
+    width: 180px;
+    padding-top: rem(3);
+  }
+}
+.p-guide__company-details {
+  @include mq(md) {
+    width: 450px;
+    margin-left: rem(20);
+  }
+}
+.p-guide__company-detail {
+  width: 100%;
+  line-height: 1.625;
+  font-size: rem(16);
+  @include mq(md) {
+    width: 450px;
+    margin-left: rem(20);
+  }
+}
+.p-guide__btn {
+  margin-top: rem(170);
+  text-align: center;
+}
+.p-guide__btn span {
+  position: relative;
+  margin-right: rem(10);
+}
+.p-guide__btn span::before {
+  position: absolute;
+  content: "";
+  background: transparent;
+  border: 1px solid #ffaf00;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  top: -6px;
+  left: -8px;
+}

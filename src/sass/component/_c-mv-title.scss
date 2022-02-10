@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.c-mv-title {
+  color: $white;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: rem(54);
+  font-family: $title-font-family;
+  font-weight: 600;
+  line-height: 1.22222;
+  white-space: nowrap;
+}
+

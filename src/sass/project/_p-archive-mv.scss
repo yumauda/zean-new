@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.p-archive-mv {
+  background-color: $white;
+  padding: rem(100);
+}
+.p-archive-mv__inner {
+  position: relative;
+}
+.p-archive-mv__title-wrapper {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-archive-mv__title {
+  font-size: rem(32);
+  font-weight: 700;
+}
+.p-archive-mv__title span {
+  color: $section-title-color;
+}

@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.p-service-mv {
+  background: $section-title-color;
+  height: 135vh;
+  position: relative;
+  overflow: hidden;
+  @include mq(md) {
+    height: (700 / 1400) * 100vw;
+  }
+}
+.p-service-mv::before {
+  position: absolute;
+  content: "";
+  background: url(/images/common/page-service-mv.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 80% 40%;
+  width: rem(519);
+  height: rem(583);
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include mq(md) {
+    background-position: 80% 40%;
+    top: 18%;
+    right: 21%;
+    left: initial;
+    transform: initial;
+    width: (519 / 1400) * 100vw;
+    height: (583 / 1400) * 100vw;
+    transform: initial;
+  }
+}
+.p-service-mv__content {
+  position: absolute;
+  content: "";
+  bottom: 5%;
+  padding: 0 rem(20);
+  @include mq(md) {
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    padding: initial;
+  }
+}
+.p-service-mv__point1,
+.p-service-mv__point2 {
+  font-size: rem(54);
+  font-weight: 700;
+}
+
+.p-service-mv__lead {
+  line-height: 1.625;
+  @include mq(md) {
+    max-width: rem(180);
+    width: 100%;
+    margin-top: rem(20);
+    margin-left: rem(25);
+  }
+}

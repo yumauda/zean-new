@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex, nofollow">
+    <!-- meta情報 -->
+    <title>zeangrosssite</title>
+    <meta name="description" content="zeangrossECサービス紹介ページ" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- css -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/gsap.js"></script>
+  </head>
+  <body>
+    <header class="l-page-header p-page-header">
+      <div class="p-page-header__sp-nav">
+          <div class="p-page-header__sp-wrapper">
+              <a href="#" class="p-page-header__img-wrapper">
+                  <img src="/images/common/top-logo.png" alt="">
+              </a>
+              <div class="p-page-header__sp-right">
+                  <a href="#" class="p-page-header__cart">
+                      <img src="/images/common/header-cart.png" alt="ショッピングカート">
+                      <span>(0)</span>
+                  </a>
+                  <div class="p-page-header__drawer p-drawer-icon">
+                      <div class="p-drawer-icon__bars">
+                      <span class="p-drawer-icon__bar1"></span>
+                      <span class="p-drawer-icon__bar2"></span>
+                      <span class="p-drawer-icon__bar3"></span>
+                      </div>
+                  </div>
+                  <div class="p-drawer-content">
+                      <div class="p-drawer-content__items">
+                      <div class="p-drawer-content__item"><a href="/service.html">service</a></div>
+                      <div class="p-drawer-content__item"><a href="/guide.html">shop guide</a></div>
+                      <div class="p-drawer-content__item"><a href="/about.html">about us</a></div>
+                      <div class="p-drawer-content__item"><a href="/contact.html">contact</a></div>
+                      <div class="p-drawer-content__item"><a href="/home.html">items</a></div>
+                      </div>
+                  </div>
+                  <div class="p-drawer-background"></div>
+              </div>
+          </div>
+      </div>
+      <div class="p-page-header__pc-nav">
+        <div class="p-page-header__pc-nav-wrapper p-pc-nav">
+            <ul class="p-pc-nav__lists1">
+                <li class="p-pc-nav__list">
+                  <div class="p-drawer-icon p-drawer-icon--ml30">
+                    <div class="p-drawer-icon__bars">
+                      <span class="p-drawer-icon__bar1"></span>
+                      <span class="p-drawer-icon__bar2"></span>
+                      <span class="p-drawer-icon__bar3"></span>
+                    </div>
+                  </div>
+                  <div class="p-drawer-content">
+                    <div class="p-drawer-content__items">
+                      <div class="p-drawer-content__item"><a href="/index.html">home</a></div>
+                      <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/works')); ?>">works</a></div>
+                      <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/about')); ?>">about us</a></div>
+                      <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/contact')); ?>">contact</a></div>
+                    </div>
+                  </div>
+                  <div class="p-drawer-background"></div>
+                </li>
+                <li class="p-pc-nav__list">
+                    <a href="/service.html">service</a>
+                </li>
+                <li class="p-pc-nav__list">
+                    <a href="/guide.html">shop guide</a>
+                </li>
+                <li class="p-pc-nav__list">
+                    <a href="/about.html">about us</a>
+                </li>
+                <li class="p-pc-nav__list">
+                    <a href="/contact.html">contact</a>
+                </li>
+            </ul>
+            <div class="p-pc-nav__logo-wrapper">
+              <a href="/" class="p-pc-nav__logo">
+                  <img src="/images/common/pc-logo.png" alt="ジーングロス">
+              </a>
+            </div>
+            <ul class="p-pc-nav__lists2">
+              <li class="p-pc-nav__list p-pc-nav__list2 p-pc-nav__lists2--right">
+                  <a href="">items</a>
+              </li>
+              <li class="p-pc-nav__list p-pc-nav__list2">
+                <a href="#">original goods</a>
+                <ul class="p-pc-nav__under">
+                  <li><a class="p-top-header__under-link" href="#">株式会社ジーングロス</a></li>
+                  <li><a class="p-top-header__under-link" href="#">ここに企業名が入ります</a></li>
+                  <li><a class="p-top-header__under-link" href="#">ここに企業名が入ります</a></li>
+                  <li><a class="p-top-header__under-link" href="#">ここに企業名が入ります</a></li>
+                  <li><a class="p-top-header__under-link" href="#">ここに企業名が入ります</a></li>
+                </ul>
+              </li>
+              <li class="p-pc-nav__list2">
+                <div class="p-top-header__list-carts">
+                  <a href="#">
+                    <img src="/images/common/header-cart.png" alt="">
+                  </a>
+                  <p>(0)</p>
+                </div>
+              </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  </header>
+    <section class="l-service-mv p-service-mv">
+        <div class="p-service-mv__content">
+            <span class="p-service-mv__point1">“</span>
+            <h1 class="c-mv-title js-page-title">service</h1>
+            <span class="p-service-mv__point2">”</span>
+            <p class="p-service-mv__lead">広告代理店が製作するオリジナルグッズの販売サイトです。一度ご製作したら、本サイトより再度ご購入することが可能です。
+              ノベルティやグッズの企画・ご製作まで、すべてお任せください。</p>
+        </div>
+    </section>
+    <div class="l-breadcrumbs">
+      <div class="p-breadcrumbs">
+        <a href="#" class="p-breadcrumbs__link">ショップホーム</a>
+        <span>＞</span>
+        <p class="p-breadcrumbs__text">サービス内容</p>
+      </div>
+    </div>
+    <section class="l-page-intro p-page-intro">
+        <div class="l-inner">
+            <div class="p-page-intro__content">
+                <ul class="p-page-intro__lists">
+                    <li class="p-page-intro__list">
+                        <div class="p-page-intro__title-wrapper">
+                            <h2 class="p-page-intro__title">“<span>production</span></span>”</h2>
+                            <p class="p-page-intro__lead">グッズの企画・製作</p>
+                        </div>
+                        <div class="p-page-intro__text-wrapper">
+                            <p class="p-page-intro__text c-text">
+                                広告代理店として今まで多くのグッズを製作してきたノウハウを用いて、あなたの会社だけのオリジナルグッズを作ります。企画から製作まで、お任せください。
+                                製作の費用や所要日数などは、
+                                <a href="#">お問い合わせ</a>からご連絡ください。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="p-page-intro__list">
+                        <div class="p-page-intro__title-wrapper">
+                            <h2 class="p-page-intro__title">“<span>repurchase</span>”</h2>
+                            <p class="p-page-intro__lead">一度製作した商品の購入</p>
+                        </div>
+                        <div class="p-page-intro__text-wrapper">
+                            <p class="p-page-intro__text c-text">
+                              本サイトでは、一度製作した商品を再度ご購入することが可能です。<br>
+                              煩わしい手間なく、追加の商品があなたのもとに届きます！
+                              
+                            </p>
+                        </div>
+                    </li>
+                    <li class="p-page-intro__list">
+                        <div class="p-page-intro__title-wrapper">
+                            <h2 class="p-page-intro__title">“<span>support</span>”</h2>
+                            <p class="p-page-intro__lead">販促・運用のサポート</p>
+                        </div>
+                        <div class="p-page-intro__text-wrapper">
+                            <p class="p-page-intro__text c-text">
+                              展示会やイベント、キャンペーンなど、グッズを使用する場面は様々。当社では、グッズを使用する大事な場面で、しっかりと効果が出るよう販促・運用のサポートも行っております。<br>
+                              当社のサポートをご希望の方は、<a>こちらから</a>ご相談ください。                              
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="l-items p-top-items">
+        <div class="l-inner">
+          <div class="p-top-items__title-wrapper">
+            <h2 class="c-section-title">items</h2>
+          </div>
+          <div class="p-top-items__content">
+            <ul class="p-top-items__lists p-cards">
+              <li class="p-cards__list p-card">
+                <a href="#" class="p-card__link">
+                  <figure class="p-card__img">
+                    <img src="./images/common/top-items-1.png" alt="カラフルなシャツ"/>
+                  </figure>
+                  <p class="p-card__text c-text">シャツ</p>
+                </a>
+              </li>
+              <li class="p-cards__list p-card">
+                <a href="#" class="p-card__link">
+                  <figure class="p-card__img">
+                    <img src="./images/common/top-items-2.png" alt="帽子" />
+                  </figure>
+                  <p class="p-card__text c-text">帽子</p>
+                </a>
+              </li>
+              <li class="p-cards__list p-card">
+                <a href="#" class="p-card__link">
+                  <figure class="p-card__img">
+                    <img src="./images/common/top-items-3.png" alt="タオル" />
+                  </figure>
+                  <p class="p-card__text c-text">タオル</p>
+                </a>
+              </li>
+              <li class="p-cards__list p-card">
+                <a href="#" class="p-card__link">
+                  <figure class="p-card__img">
+                    <img src="./images/common/top-items-4.png" alt="バッグ" />
+                  </figure>
+                  <p class="p-card__text c-text">バッグ</p>
+                </a>
+              </li>
+              <li class="p-cards__list p-card">
+                <a href="#" class="p-card__link">
+                  <figure class="p-card__img">
+                    <img src="./images/common/top-items-5.png" alt="スマホグッズ"/>
+                  </figure>
+                  <p class="p-card__text c-text">スマホグッズ</p>
+                </a>
+              </li>
+              <li class="p-cards__list p-card">
+                <a href="#" class="p-card__link">
+                  <figure class="p-card__img">
+                    <img src="./images/common/top-items-1.png" alt="" />
+                  </figure>
+                  <p class="p-card__text c-text">筆記用具</p>
+                </a>
+              </li>
+              <li class="p-cards__list p-card">
+                <a href="#" class="p-card__link">
+                  <figure class="p-card__img">
+                    <img src="./images/common/top-items-2.png" alt="ステッカー" />
+                  </figure>
+                  <p class="p-card__text c-text">ステッカー</p>
+                </a>
+              </li>
+              <li class="p-cards__list p-card">
+                <a href="#" class="p-card__link">
+                  <figure class="p-card__img">
+                    <img src="./images/common/service-invite.jpg" alt="ボタン" />
+                  </figure>
+                  <p class="p-card__text c-text">その他アイテム</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="p-page-items__btn-wrapper">
+            <a href="" class="p-page-items__btn c-page-btn">back to home</a>
+          </div>
+        </div>
+      </section>
+      <section class="l-page-contact p-page-contact">
+          <div class="p-top-original__contact p-page-contact__content">
+            <figure class="p-top-original__contact-img p-page-contact__img">
+              <img src="./images/common/contact-logo.png" alt="スマホとハート"/>
+            </figure>
+            <div class="p-top-original__contact-detail">
+              <h3 class="p-top-original__contact-title">contact</h3>
+              <p class="p-top-original__contact-text c-text">
+                オリジナルグッズの作成をご検討の方やそのほかお問い合わせはこちらから
+              </p>
+              <div class="p-top-original__contact-btn-wrapper">
+                <a href="#" class="p-top-original__contact-btn">read more</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <footer class="l-footer p-footer">
+        <div class="l-inner">
+          <div class="p-footer__content-wrapper">
+            <div class="p-footer__logo">
+              <a href="#" class="p-footer__logo-link">
+                <img src="./images/common/footer-logo.png" alt="ジーングロス" />
+              </a>
+            </div>
+            <div class="p-footer__content">
+              <ul class="p-footer__lists">
+                <li class="p-footer__list">
+                  <a href="#" class="p-footer__link">ショップホーム</a>
+                </li>
+                <div class="p-footer__line"></div>
+                <li class="p-footer__list">
+                  <a href="#" class="p-footer__link">サービス内容</a>
+                </li>
+                <div class="p-footer__line"></div>
+                <li class="p-footer__list">
+                  <a href="#" class="p-footer__link">企業情報</a>
+                </li>
+                <div class="p-footer__line"></div>
+                <li class="p-footer__list">
+                  <a href="#" class="p-footer__link">お問い合わせ</a>
+                </li>
+              </ul>
+              <ul class="p-footer__lists">
+                <li class="p-footer__list">
+                  <a href="#" class="p-footer__link">お支払い方法について</a>
+                </li>
+                <div class="p-footer__line"></div>
+                <li class="p-footer__list">
+                  <a href="#" class="p-footer__link">配送方法・送料について</a>
+                </li>
+                <div class="p-footer__line"></div>
+                <li class="p-footer__list">
+                  <a href="#" class="p-footer__link">返品について</a>
+                </li>
+                <div class="p-footer__line"></div>
+                <li class="p-footer__list">
+                  <a href="#" class="p-footer__link">特定商取引法に基づく表記</a>
+                </li>
+                <div class="p-footer__line"></div>
+                <li class="p-footer__list">
+                  <a href="#" class="p-footer__link">プライバシーポリシー</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="p-footer__small">
+          <small>©2022 jeengross.</small>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.p-top-service {
+  background: $black;
+  position: relative;
+  z-index: -1;
+}
+.p-top-service__content {
+  @include mq(md) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.p-top-service__img {
+  width: 58.5%;
+  position: relative;
+}
+.p-top-service__img::before {
+  padding-top: 46.34%;
+  display: block;
+  content: "";
+}
+.p-top-service__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.p-top-service__detail {
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+  padding-left: rem(25);
+  padding-right: rem(25);
+  background: $black;
+  color: $section-title-color;
+  position: relative;
+  z-index: 1;
+  @include mq(md) {
+    padding-top: rem(96);
+    padding-bottom: rem(60);
+    padding-left: rem(65);
+    padding-right: rem(82);
+    width: 41.5%;
+  }
+}
+.p-top-service__title-wrapper {
+}
+.p-top-service__title {
+  text-transform: uppercase;
+  font-size: rem(32);
+  font-family: $title-font-family;
+}
+.p-top-service__text {
+  font-size: rem(16);
+  line-height: 1.625;
+}
+.p-top-service__btn {
+  text-align: right;
+  cursor: pointer;
+}

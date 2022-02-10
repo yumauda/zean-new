@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.c-guide-text {
+  font-size: rem(16);
+  line-height: 1.3125;
+}
+.c-guide-text--bold {
+  font-weight: 700;
+}
+

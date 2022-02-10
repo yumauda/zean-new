@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.p-header {
+}
+.p-header__content {
+  display: flex;
+  align-items: center;
+  line-height: rem(60);
+  font-family: $header-font-family;
+  font-weight: 700;
+}
+.p-header__logo {
+  display: block;
+  width: rem(50);
+  height: rem(50);
+  padding-top: rem(25);
+  @include mq(md){
+    display: none;
+  }
+}
+.p-header__nav {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+.p-header__lists {
+  display: flex;
+  align-items: center;
+}
+.p-header__list,
+.p-header__cart-list {
+  text-transform: uppercase;
+}
+.p-header__list + .p-header__list {
+  margin-left: rem(42);
+}
+.p-header__cart-list + .p-header__cart-list {
+  margin-left: rem(42);
+}
+.p-header__cart-nav {
+  display: none;
+  @include mq(md) {
+    display: block;
+    margin-left: auto;
+  }
+}
+.p-header__cart-lists {
+  display: flex;
+  align-items: center;
+}

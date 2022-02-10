@@ -1,0 +1,119 @@
+@use "global" as *;
+
+.p-form {
+  background: #efefef;
+  padding-top: rem(12);
+  padding-bottom: rem(30);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(60);
+    padding-left: rem(170);
+    padding-right: rem(170);
+  }
+}
+.p-form__content {
+  background-color: #fff;
+  padding: rem(40) rem(18);
+  @include mq(md) {
+    padding: rem(74) rem(82);
+  }
+}
+.p-form__form {
+  padding: 0 rem(20);
+  margin: 0 auto;
+  max-width: rem(600);
+  width: 100%;
+}
+.p-form__dl {
+  @include mq(md) {
+    max-width: rem(680);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(20);
+  }
+}
+.p-form__row {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+  }
+}
+.p-form__row:first-child {
+  padding-top: 0;
+}
+.p-form__row--textarea {
+  border-bottom: initial;
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+  }
+}
+.p-form__title {
+  font-size: rem(14);
+  position: relative;
+  padding-top: rem(28);
+  display: block;
+  @include mq(md) {
+    border-bottom: none;
+    width: 205px;
+    padding-top: initial;
+  }
+}
+.p-form__input-area {
+  width: 100%;
+  color: #aaa;
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: initial;
+    margin-left: rem(70);
+    font-size: rem(15);
+    margin-left: rem(20);
+  }
+}
+.p-form__lead-wrapper {
+  text-align: left;
+  margin-top: rem(50);
+  @include mq(md) {
+    text-align: center;
+  }
+}
+.p-form__lead {
+  font-weight: 400;
+}
+.p-form__lead a {
+  color: #df2e6d;
+  border-bottom: 1px solid #df2e6d;
+}
+.p-form__button-wrapper {
+  text-align: center;
+}
+.p-form__button {
+  margin-top: rem(50);
+  text-align: center;
+  text-align: -webkit-center;
+  position: relative;
+  display: block;
+}
+.p-form__button::before {
+  position: absolute;
+  content: "";
+  background: url(/images/common/submit-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  right: 32%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.p-form__button:hover::before {
+  opacity: 0.7;
+}

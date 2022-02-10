@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.l-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  z-index: 9999;
+  height: rem(100);
+  @include mq(md) {
+    height: rem(60);
+  }
+}
+.l-header-inner {
+  padding-left: rem(20);
+}

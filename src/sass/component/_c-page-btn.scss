@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.c-page-btn {
+  background: $black;
+  color: $section-title-color;
+  text-transform: uppercase;
+  font-size: rem(14);
+  font-family: $title-font-family;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  padding-left: rem(100);
+  padding-right: rem(53);
+  display: inline-block;
+  position: relative;
+}
+.c-page-btn::before {
+  position: absolute;
+  content: "";
+  background-image: url(/images/common/c-page-btn-icon.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: rem(30);
+  height: rem(30);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 23%;
+}

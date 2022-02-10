@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.p-top-items {
+  position: relative;
+  background: #efefef;
+  padding-top: rem(90);
+  padding-bottom: rem(100);
+  z-index: -1;
+}
+.p-top-items__content {
+  margin-top: rem(50);
+}
+.p-top-items__title-wrapper {
+  position: relative;
+  z-index:0;
+}

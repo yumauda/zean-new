@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.p-cards__list:first-child {
+  margin-left: 0;
+}
+.p-cards__list:nth-child(4n + 1) {
+  @include mq(md) {
+    margin-left: 0;
+  }
+}
+.p-cards__list:nth-child(n + 5) {
+  @include mq(md) {
+    margin-top: rem(55);
+  }
+}

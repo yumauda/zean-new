@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.p-top-navigation {
+}
+.p-top-navigation--right {
+  position: relative;
+}
+.p-top-navigation--right::before {
+  position: absolute;
+  content: "";
+  width: rem(1);
+  height: rem(60);
+  top: -30px;
+  left: rem(-20);
+  background-color: $black;
+}
+
