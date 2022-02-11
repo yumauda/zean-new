@@ -854,7 +854,7 @@ select {
 
 .p-drawer-icon.is-active {
   position: relative;
-  z-index: 99999;
+  z-index: 999999;
 }
 .p-drawer-icon.is-active .p-drawer-icon__bar1 {
   -webkit-transform: rotate(-45deg);
