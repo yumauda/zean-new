@@ -77,10 +77,13 @@
 .p-drawer-content__item {
   display: block;
   text-transform: uppercase;
-  font-size: rem(40);
   font-weight: 700;
   line-height: 1;
   padding: rem(25);
+  font-size: rem(24);
+  @include mq(md){
+    font-size: rem(40);
+  }
 }
 
 .p-drawer-background {

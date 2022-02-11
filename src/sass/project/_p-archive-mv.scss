@@ -17,6 +17,8 @@
 .p-archive-mv__title {
   font-size: rem(32);
   font-weight: 700;
+  display: inline-flex;
+  white-space: nowrap;
 }
 .p-archive-mv__title span {
   color: $section-title-color;

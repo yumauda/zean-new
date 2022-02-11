@@ -2,7 +2,7 @@
 
 .p-service-mv {
   background: $section-title-color;
-  height: 135vh;
+  height: 160vh;
   position: relative;
   overflow: hidden;
   @include mq(md) {
@@ -34,11 +34,12 @@
   }
 }
 .p-service-mv__content {
-  position: absolute;
-  content: "";
-  bottom: 5%;
-  padding: 0 rem(20);
+  padding-top: 175%;
+  padding-left: rem(20);
+  padding-right: rem(20);
   @include mq(md) {
+    position: absolute;
+    content: "";
     top: 55%;
     left: 35%;
     transform: translate(-50%, -50%);

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-mv {
-  height: 150vh;
+  height: 240vh;
   background-color: $white;
   position: relative;
   z-index: 0;
@@ -12,23 +12,21 @@
   }
 }
 .p-mv::before {
-  position: absolute;
-  content: "";
-  background-image: url(/images/common/top-mv-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: rem(645);
-  height: rem(570);
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
+  display: none;
   @include mq(md) {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/images/common/top-mv-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: (645 / 1400) * 100vw;
     height: (570 / 1400) * 100vw;
+    z-index: 2;
     top: 10%;
     right: 10%;
+    transform: translateX(-50%);
     left: initial;
     transform: initial;
   }
@@ -125,15 +123,16 @@
 }
 .p-mv__detail {
   width: rem(300);
-  top: 10%;
+  top: 8%;
   left: 50%;
   transform: translateX(-50%);
-  position: absolute;
   content: "";
-  z-index: 3;
+  z-index: 10;
   font-weight: 600;
   line-height: 1;
+  position: relative;
   @include mq(md) {
+    position: absolute;
     width: rem(400);
     top: 18%;
     left: 18%;
@@ -183,5 +182,19 @@
   white-space: nowrap;
   @include mq(md) {
     font-size: rem(38);
+  }
+}
+.p-mv__img-sp {
+  position: relative;
+  width: rem(900);
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  z-index: 999;
+  margin-top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(md) {
+    display: none;
   }
 }

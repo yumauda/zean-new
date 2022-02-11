@@ -93,11 +93,13 @@
 }
 .p-form__button {
   margin-top: rem(50);
-  text-align: center;
-  text-align: -webkit-center;
-  text-align: -moz-center;
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  /* text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center; */
+  /* display: block; */
 }
 .p-form__button::before {
   position: absolute;
@@ -106,14 +108,17 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 30px;
-  right: 32%;
+  width: rem(30);
+  height: rem(30);
   top: 50%;
+  right: 25%;
   transform: translateY(-50%);
   z-index: 10;
   pointer-events: none;
   transition: all 0.3s;
+  @include mq(md) {
+    right: 32%;
+  }
 }
 .p-form__button:hover::before {
   opacity: 0.7;
