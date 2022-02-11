@@ -1532,7 +1532,7 @@ select {
           align-items: center;
   line-height: 60px;
   line-height: 3.75rem;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-weight: 700;
 }
 
@@ -1686,7 +1686,7 @@ select {
 
 .p-mv__nav-link {
   display: block;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
@@ -2081,7 +2081,7 @@ select {
   font-size: 16px;
   font-size: 1rem;
   font-weight: 700;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   text-transform: uppercase;
   margin-left: 30px;
   margin-left: 1.875rem;
@@ -2131,7 +2131,7 @@ select {
 
 .p-pc-nav__list2 {
   position: relative;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   padding-left: 35px;
   padding-left: 2.1875rem;
   padding-right: 35px;
@@ -2790,7 +2790,7 @@ select {
 }
 
 .p-top-header__nav {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
