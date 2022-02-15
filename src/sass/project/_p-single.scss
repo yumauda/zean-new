@@ -59,8 +59,19 @@
 .p-single__tag {
   border-bottom: 1px solid #000;
 }
+
 .p-single__tag + .p-single__tag {
   margin-left: rem(20);
+}
+.p-single__tag:hover {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+  @include mq("md") {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
 .p-single__choose-wrapper {
   width: rem(180);
@@ -111,6 +122,16 @@
 .p-single__term {
   font-size: rem(14);
   border-bottom: 1px solid #000;
+}
+.p-single__term:hover {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+  @include mq("md") {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
 .p-single__contact-wrapper {
   max-width: rem(400);

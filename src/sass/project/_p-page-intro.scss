@@ -23,9 +23,9 @@
 }
 .p-page-intro__list {
   height: rem(480);
-  padding-top: rem(80);
-  padding-left: rem(35);
-  padding-right: rem(35);
+  padding-top: rem(85);
+  padding-left: rem(50);
+  padding-right: rem(50);
   border: 2px solid #000;
   @include mq(md) {
     width: calc(33.3333% - 20px * 2 / 3);
@@ -50,6 +50,8 @@
 }
 .p-page-intro__title span {
   color: $section-title-color;
+  font-family: $title-font-family;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .p-page-intro__lead {
@@ -57,9 +59,10 @@
 }
 .p-page-intro__text-wrapper {
   margin-top: rem(70);
-  padding: 0 rem(15);
 }
 .p-page-intro__text {
+  letter-spacing: -0.09em;
+  text-align: justify;
 }
 .p-page-intro__text a {
   color: $section-title-color;
