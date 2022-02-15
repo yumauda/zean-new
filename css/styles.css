@@ -343,7 +343,7 @@ select {
 .p-about-mv {
   position: relative;
   padding-top: 129.7%;
-  background-image: url(/images/common/about-mv-sp.jpg);
+  background-image: url(../images/common/about-mv-sp.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -353,7 +353,7 @@ select {
 @media screen and (min-width: 768px) {
   .p-about-mv {
     /* height: (400 / 1400) * 100vw; */
-    background-image: url(/images/common/about-mv.jpg);
+    background-image: url(../images/common/about-mv.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -364,27 +364,6 @@ select {
   }
 }
 
-/* .p-about-mv::before {
-  width: rem(342);
-  height: rem(285);
-  position: absolute;
-  content: "";
-  background: url(/images/common/page-aboutus-mv.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 80% 40%;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  @include mq(md) {
-    top: 25%;
-    right: 17%;
-    left: initial;
-    transform: initial;
-    width: (342 / 1400) * 100vw;
-    height: (285 / 1400) * 100vw;
-  }
-} */
 .p-about-mv__content {
   position: absolute;
   content: "";
@@ -3130,7 +3109,7 @@ select {
 .p-top-original__contact-btn::before {
   position: absolute;
   content: "";
-  background: url(/images/common/submit-icon.png);
+  background: url(../images/common/submit-icon.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3318,7 +3297,7 @@ select {
 .c-page-btn::before {
   position: absolute;
   content: "";
-  background-image: url(/images/common/c-page-btn-icon.png);
+  background-image: url(../images/common/c-page-btn-icon.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
