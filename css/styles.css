@@ -1257,16 +1257,12 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* text-align: center;
-  text-align: -webkit-center;
-  text-align: -moz-center; */
-  /* display: block; */
 }
 
 .p-form__button::before {
   position: absolute;
   content: "";
-  background: url(/images/common/submit-icon.png);
+  background: url(../images/common/submit-icon.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
