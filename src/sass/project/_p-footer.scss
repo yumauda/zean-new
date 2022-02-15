@@ -41,6 +41,7 @@
 .p-footer__list {
   margin-top: rem(10);
   font-size: rem(14);
+  position: relative;
   color: $black;
   @include mq(md) {
     margin-top: initial;
@@ -52,6 +53,14 @@
     margin-left: rem(40);
     margin-right: initial;
   }
+}
+.p-footer__list::before {
+  position: absolute;
+  content: '|';
+  right: rem(-20);
+}
+.p-footer__list:last-child::before {
+  display: none;
 }
 .p-footer__line {
   margin-top: rem(10);
