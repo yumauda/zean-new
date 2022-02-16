@@ -133,4 +133,8 @@ input[type="submit"]:hover {
 select {
   text-align: center;
   background: transparent;
+  transition: all 0.3s;
+}
+select:hover {
+  opacity: 0.8;
 }

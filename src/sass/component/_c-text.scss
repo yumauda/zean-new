@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .c-text {
-  font-size: rem(16);
+  font-size: rem(14);
   color: $black;
   line-height: 1.625;
   @include mq(md) {
@@ -10,7 +10,7 @@
 }
 .c-text--second {
   font-size: rem(16);
-  font-weight: 700;
+  font-weight: 600;
 }
 .c-text--privacy {
   font-size: rem(16);
