@@ -918,7 +918,7 @@ select:hover {
 }
 
 .p-drawer-content {
-  width: 70%;
+  width: 100%;
   height: 100%;
   position: fixed;
   right: 0;
@@ -942,8 +942,6 @@ select:hover {
 
 .p-drawer-content__items {
   text-align: center;
-  padding-top: 100px;
-  padding-top: 6.25rem;
 }
 
 .p-drawer-content__item {
@@ -960,6 +958,70 @@ select:hover {
   .p-drawer-content__item {
     font-size: 2.5rem;
   }
+}
+
+.p-drawer-content__item a {
+  text-align: center;
+}
+
+.p-drawer-content__item--top a:before {
+  display: block;
+  content: "トップページ";
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.p-drawer-content__item--service a:before {
+  display: block;
+  content: "サービス内容";
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.p-drawer-content__item--home a:before {
+  display: block;
+  content: "商品一覧";
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.p-drawer-content__item--about a::before {
+  display: block;
+  content: "企業情報";
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.p-drawer-content__item--guide a::before {
+  display: block;
+  content: "ご利用ガイド・特定商取引法に基づく表記";
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.p-drawer-content__item--privacy a::before {
+  display: block;
+  content: "プライバシーポリシー";
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .p-drawer-background {
@@ -3221,6 +3283,12 @@ select:hover {
     width: 41.5%;
   }
 }
+@media screen and (min-width: 1400px) {
+  .p-top-service__detail {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+}
 
 .p-top-service__title {
   text-transform: uppercase;
@@ -3233,11 +3301,22 @@ select:hover {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.625;
+  text-align: justify;
+}
+@media screen and (min-width: 1400px) {
+  .p-top-service__text {
+    text-align: center;
+  }
 }
 
 .p-top-service__btn {
   text-align: right;
   cursor: pointer;
+}
+@media screen and (min-width: 1400px) {
+  .p-top-service__btn {
+    margin-top: 3rem;
+  }
 }
 
 .c-btn {

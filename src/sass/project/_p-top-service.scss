@@ -50,6 +50,10 @@
     padding-right: rem(82);
     width: 41.5%;
   }
+  @include mq(xl) {
+    padding-left: rem(60);
+    padding-right: rem(60);
+  }
 }
 .p-top-service__title-wrapper {
 }
@@ -61,8 +65,15 @@
 .p-top-service__text {
   font-size: rem(16);
   line-height: 1.625;
+  text-align: justify;
+  @include mq(xl) {
+    text-align: center;
+  }
 }
 .p-top-service__btn {
   text-align: right;
   cursor: pointer;
+  @include mq(xl) {
+    margin-top: rem(48);
+  }
 }
