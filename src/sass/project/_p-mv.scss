@@ -154,9 +154,11 @@
 .p-mv__title--bottom1 {
   font-size: rem(80);
   font-family: $title-font-family;
-  color: $black;
+  color: $section-title-color;
+  white-space: nowrap;
   @include mq(md) {
-    font-size: (80 / 1400) * 100vw;
+    font-size: (64 / 1400) * 100vw;
+    white-space: normal;
   }
 }
 .p-mv__title--bottom2 {
@@ -177,6 +179,7 @@
   font-family: $title-font-family;
   font-weight: 600;
   margin-top: rem(10);
+  color: $black;
   @include mq(md) {
     font-size: (80 / 1400) * 100vw;
   }

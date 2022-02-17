@@ -1878,11 +1878,13 @@ select:hover {
   font-size: 80px;
   font-size: 5rem;
   font-family: "Source Code Pro", monospace;
-  color: #000;
+  color: #ffaf00;
+  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .p-mv__title--bottom1 {
-    font-size: 5.7142857143vw;
+    font-size: 4.5714285714vw;
+    white-space: normal;
   }
 }
 
@@ -1912,6 +1914,7 @@ select:hover {
   font-weight: 600;
   margin-top: 10px;
   margin-top: 0.625rem;
+  color: #000;
 }
 @media screen and (min-width: 768px) {
   .p-mv__title--bottom3 {
