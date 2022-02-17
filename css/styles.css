@@ -1852,7 +1852,7 @@ select:hover {
     position: absolute;
     width: 25rem;
     top: 18%;
-    left: 18%;
+    left: 16%;
     -webkit-transform: none;
             transform: none;
     -webkit-transform: initial;
@@ -1880,6 +1880,11 @@ select:hover {
   font-family: "Source Code Pro", monospace;
   color: #000;
 }
+@media screen and (min-width: 768px) {
+  .p-mv__title--bottom1 {
+    font-size: 5.7142857143vw;
+  }
+}
 
 .p-mv__title--bottom2 {
   font-size: 80px;
@@ -1889,6 +1894,11 @@ select:hover {
   margin-top: 10px;
   margin-top: 0.625rem;
 }
+@media screen and (min-width: 768px) {
+  .p-mv__title--bottom2 {
+    font-size: 5.7142857143vw;
+  }
+}
 
 .p-mv__title--bottom2 span {
   display: inline-block;
@@ -1896,12 +1906,17 @@ select:hover {
 }
 
 .p-mv__title--bottom3 {
-  font-family: "Source Code Pro", monospace;
-  font-weight: 600;
   font-size: 80px;
   font-size: 5rem;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
   margin-top: 10px;
   margin-top: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__title--bottom3 {
+    font-size: 5.7142857143vw;
+  }
 }
 
 .p-mv__title--bottom4 {
@@ -1915,7 +1930,7 @@ select:hover {
 }
 @media screen and (min-width: 768px) {
   .p-mv__title--bottom4 {
-    font-size: 2.375rem;
+    font-size: 2.7142857143vw;
   }
 }
 

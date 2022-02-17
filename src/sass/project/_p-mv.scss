@@ -136,7 +136,7 @@
     position: absolute;
     width: rem(400);
     top: 18%;
-    left: 18%;
+    left: 16%;
     transform: initial;
   }
 }
@@ -155,22 +155,31 @@
   font-size: rem(80);
   font-family: $title-font-family;
   color: $black;
+  @include mq(md) {
+    font-size: (80 / 1400) * 100vw;
+  }
 }
 .p-mv__title--bottom2 {
   font-size: rem(80);
   font-family: $title-font-family;
   color: $black;
   margin-top: rem(10);
+  @include mq(md) {
+    font-size: (80 / 1400) * 100vw;
+  }
 }
 .p-mv__title--bottom2 span {
   display: inline-block;
   color: $section-title-color;
 }
 .p-mv__title--bottom3 {
+  font-size: rem(80);
   font-family: $title-font-family;
   font-weight: 600;
-  font-size: rem(80);
   margin-top: rem(10);
+  @include mq(md) {
+    font-size: (80 / 1400) * 100vw;
+  }
 }
 .p-mv__title--bottom4 {
   font-size: rem(30);
@@ -179,7 +188,7 @@
   margin-top: rem(18);
   white-space: nowrap;
   @include mq(md) {
-    font-size: rem(38);
+    font-size: (38 / 1400) * 100vw;
   }
 }
 .p-mv__img-sp {
