@@ -75,3 +75,11 @@ jQuery('.p-drawer-background').on('click',function(e){
 	jQuery('.p-drawer-background').toggleClass('is-active');
 	return false;
 });
+// selectと同じようにonchangeでラベルを変えたいときはJSを用いる
+$('.select').on('change', function(){
+  var $this = $(this)
+  var $option = $this.find('option:selected');
+  $('.label').text($option.text());
+  // onchange後にフォーカスしてるのが嫌な場合
+  $this.blur();
+});

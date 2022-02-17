@@ -2731,6 +2731,7 @@ select:hover {
   padding: 20px 0;
   padding: 1.25rem 0;
   text-align: center;
+  margin-left: auto;
 }
 
 .p-single__enter:hover {
@@ -2739,6 +2740,8 @@ select:hover {
 
 .p-single__term-wrapper {
   text-align: right;
+  text-align: -moz-right;
+  text-align: -webkit-right;
 }
 
 .p-single__term {
@@ -2805,6 +2808,65 @@ select:hover {
   .p-single__back-btn {
     margin-top: 6rem;
   }
+}
+
+.btn-select {
+  width: 180px;
+  width: 11.25rem;
+  margin-top: 3px;
+  margin-top: 0.1875rem;
+  margin-left: auto;
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid #000;
+  cursor: pointer;
+  /* IEでcursorがチラついたので */
+}
+
+.btn-select:hover {
+  opacity: 0.7;
+}
+
+.label {
+  color: #000;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 48%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  padding: 2px 15px;
+  padding: 0.125rem 0.9375rem;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+/* IE10以上で矢印を消す */
+.select::-ms-expand {
+  display: none;
+}
+
+/* フォーカス時 */
+.select:focus {
+  z-index: -1;
+  opacity: 0.8;
 }
 
 .gallery {
