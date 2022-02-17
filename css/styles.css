@@ -358,7 +358,6 @@ select:hover {
 }
 @media screen and (min-width: 768px) {
   .p-about-mv {
-    /* height: (400 / 1400) * 100vw; */
     background-image: url(../images/common/about-mv.jpg);
     background-position: center;
     background-size: cover;
@@ -1126,6 +1125,10 @@ select:hover {
   }
 }
 
+.p-footer__list + .p-footer__list {
+  margin-left: 40px;
+  margin-left: 2.5rem;
+}
 @media screen and (min-width: 768px) {
   .p-footer__list + .p-footer__list {
     margin-left: 2.5rem;
@@ -1143,28 +1146,6 @@ select:hover {
 
 .p-footer__list:last-child::before {
   display: none;
-}
-
-.p-footer__line {
-  margin-top: 10px;
-  margin-top: 0.625rem;
-  background-color: #000;
-  width: 1px;
-  width: 0.0625rem;
-  height: 15px;
-  height: 0.9375rem;
-  margin-left: 15px;
-  margin-left: 0.9375rem;
-  margin-right: 15px;
-  margin-right: 0.9375rem;
-}
-@media screen and (min-width: 768px) {
-  .p-footer__line {
-    margin-top: 0;
-    margin-top: initial;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
 }
 
 .p-footer__small {
@@ -3333,7 +3314,7 @@ select:hover {
 .c-btn::before {
   position: absolute;
   content: "";
-  background-image: url(/images/common/top-read-more.png);
+  background-image: url(../images/common/top-read-more.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

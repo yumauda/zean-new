@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   margin-top: rem(100);
   @include mq(md) {
-    /* height: (400 / 1400) * 100vw; */
     background-image: url(../images/common/about-mv.jpg);
     background-position: center;
     background-size: cover;

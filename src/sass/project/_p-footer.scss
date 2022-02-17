@@ -49,6 +49,7 @@
   }
 }
 .p-footer__list + .p-footer__list {
+  margin-left: rem(40);
   @include mq(md) {
     margin-left: rem(40);
     margin-right: initial;
@@ -61,19 +62,6 @@
 }
 .p-footer__list:last-child::before {
   display: none;
-}
-.p-footer__line {
-  margin-top: rem(10);
-  background-color: $black;
-  width: rem(1);
-  height: rem(15);
-  margin-left: rem(15);
-  margin-right: rem(15);
-  @include mq(md) {
-    margin-top: initial;
-    margin-left: rem(20);
-    margin-right: rem(20);
-  }
 }
 .p-footer__small {
   margin-top: rem(60);

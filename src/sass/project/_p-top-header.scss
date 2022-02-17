@@ -1,7 +1,5 @@
 @use "global" as *;
 
-.p-top-header {
-}
 .p-top-header__content {
   display: none;
   @include mq(md) {
