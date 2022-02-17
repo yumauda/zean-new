@@ -459,6 +459,7 @@ select:hover {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 700;
+  text-align: justify;
 }
 @media screen and (min-width: 768px) {
   .p-about__title {
@@ -469,6 +470,7 @@ select:hover {
 
 .p-about__text {
   width: 100%;
+  text-align: justify;
 }
 @media screen and (min-width: 768px) {
   .p-about__text {
@@ -483,11 +485,6 @@ select:hover {
 
 .p-about__text-wrapper {
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .p-about__text-wrapper {
-    margin-left: 1.25rem;
-  }
 }
 
 .p-about__btn-wrapper {
@@ -1509,9 +1506,8 @@ select:hover {
   margin-top: 2.5rem;
 }
 
-.p-guide-row__right-list {
-  /* line-height: 1.625;
-  padding-left: rem(15); */
+.p-guide__company {
+  text-align: justify;
 }
 
 @media screen and (min-width: 768px) {
@@ -1554,11 +1550,18 @@ select:hover {
   line-height: 1.625;
   font-size: 16px;
   font-size: 1rem;
+  text-align: justify;
 }
 @media screen and (min-width: 768px) {
   .p-guide__company-detail {
     width: 450px;
     margin-left: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-guide__company-detail--ml0 {
+    margin-left: 0;
   }
 }
 
@@ -1584,6 +1587,10 @@ select:hover {
   border-radius: 15px;
   top: -6px;
   left: -8px;
+}
+
+.p-guide-row__right-list {
+  text-align: justify;
 }
 
 .p-header__content {
@@ -2466,6 +2473,9 @@ select:hover {
   font-weight: 600;
 }
 
+.p-service-mv__lead {
+  text-align: justify;
+}
 @media screen and (min-width: 768px) {
   .p-service-mv__lead {
     max-width: 11.5625rem;
@@ -2600,6 +2610,10 @@ select:hover {
   margin-top: 2.5rem;
 }
 
+.p-single__text {
+  text-align: justify;
+}
+
 .p-single__data-title {
   width: 80px;
 }
@@ -2650,6 +2664,7 @@ select:hover {
   margin-top: 1.25rem;
   font-size: 14px;
   font-size: 0.875rem;
+  text-align: justify;
 }
 
 .p-single__btn-wrapper {
@@ -3332,6 +3347,7 @@ select:hover {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.3125;
+  text-align: justify;
 }
 
 .c-guide-text--bold {
@@ -3479,6 +3495,7 @@ select:hover {
   font-size: 0.875rem;
   color: #000;
   line-height: 1.625;
+  text-align: justify;
 }
 @media screen and (min-width: 768px) {
   .c-text {
@@ -3490,12 +3507,14 @@ select:hover {
   font-size: 16px;
   font-size: 1rem;
   font-weight: 600;
+  text-align: justify;
 }
 
 .c-text--privacy {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.625;
+  text-align: justify;
 }
 
 .c-title-background {

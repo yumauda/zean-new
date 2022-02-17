@@ -28,6 +28,7 @@
 .p-about__title {
   font-size: rem(14);
   font-weight: 700;
+  text-align: justify;
   @include mq(md) {
     width: 130px;
     padding-top: rem(3);
@@ -35,6 +36,7 @@
 }
 .p-about__text {
   width: 100%;
+  text-align: justify;
   @include mq(md) {
     margin-left: rem(20);
   }
@@ -45,9 +47,6 @@
 }
 .p-about__text-wrapper {
   width: 100%;
-  @include mq(md) {
-    margin-left: rem(20);
-  }
 }
 .p-about__btn-wrapper {
   text-align: center;
