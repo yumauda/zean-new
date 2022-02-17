@@ -2851,7 +2851,7 @@ select:hover {
   border: none;
   padding: 2px 15px;
   padding: 0.125rem 0.9375rem;
-  opacity: 0;
+  opacity: 0 !important;
   position: relative;
   z-index: 2;
   font-size: 14px;

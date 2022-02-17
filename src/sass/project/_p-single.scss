@@ -204,7 +204,7 @@
   width: 100%;
   border: none;
   padding: rem(2) rem(15);
-  opacity: 0;
+  opacity: 0 !important;
   position: relative;
   z-index: 2;
   font-size: rem(14);
