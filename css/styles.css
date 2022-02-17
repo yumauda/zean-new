@@ -2738,10 +2738,7 @@ select:hover {
 }
 
 .p-single__term-wrapper {
-  max-width: 240px;
-  max-width: 15rem;
-  width: 100%;
-  margin-left: auto;
+  text-align: right;
 }
 
 .p-single__term {
