@@ -1875,8 +1875,8 @@ select:hover {
 }
 
 .p-mv__title--bottom1 {
-  font-size: 80px;
-  font-size: 5rem;
+  font-size: 64px;
+  font-size: 4rem;
   font-family: "Source Code Pro", monospace;
   color: #ffaf00;
   white-space: nowrap;
