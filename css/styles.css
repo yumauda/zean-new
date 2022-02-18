@@ -1495,6 +1495,11 @@ select:hover {
   }
 }
 
+.p-guide-row__right-title {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
 @media screen and (min-width: 768px) {
   .p-guide-row__right-wrapper {
     width: 450px;
@@ -1591,6 +1596,12 @@ select:hover {
 
 .p-guide-row__right-list {
   text-align: justify;
+}
+
+.p-guide__indent {
+  margin-left: 16px;
+  margin-left: 1rem;
+  text-indent: -1em;
 }
 
 .p-header__content {
@@ -2407,9 +2418,16 @@ select:hover {
   line-height: 2.5;
 }
 
+.p-privacy__text--mt37 {
+  margin-top: 37px;
+  margin-top: 2.3125rem;
+}
+
 .p-privacy__lists {
   margin-top: 37px;
   margin-top: 2.3125rem;
+  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 .p-privacy__btn {
@@ -3592,6 +3610,16 @@ select:hover {
   font-size: 1rem;
   line-height: 1.625;
   text-align: justify;
+}
+
+.c-text--privacy__ml0 {
+  margin-left: 0;
+  margin-left: initial;
+}
+
+.c-text__indent {
+  margin-left: 1em;
+  text-indent: -1em;
 }
 
 .c-title-background {

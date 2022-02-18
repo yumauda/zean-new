@@ -53,6 +53,10 @@
     width: 200px;
   }
 }
+.p-guide-row__right-title {
+  margin-left: 1em;
+  text-indent: -1em;
+}
 .p-guide-row__right-wrapper {
   @include mq(md) {
     width: 450px;
@@ -124,4 +128,8 @@
 }
 .p-guide-row__right-list {
   text-align: justify;
+}
+.p-guide__indent {
+  margin-left: rem(16);
+  text-indent: -1em;
 }
