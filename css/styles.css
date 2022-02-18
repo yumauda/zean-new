@@ -1108,6 +1108,8 @@ select:hover {
 .p-footer__list {
   margin-top: 10px;
   margin-top: 0.625rem;
+  margin-right: 40px;
+  margin-right: 2.5rem;
   font-size: 14px;
   font-size: 0.875rem;
   position: relative;
@@ -1122,10 +1124,6 @@ select:hover {
   }
 }
 
-.p-footer__list + .p-footer__list {
-  margin-left: 40px;
-  margin-left: 2.5rem;
-}
 @media screen and (min-width: 768px) {
   .p-footer__list + .p-footer__list {
     margin-left: 2.5rem;
