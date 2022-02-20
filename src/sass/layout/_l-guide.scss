@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-guide {
+  margin-top: rem(64);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}

@@ -268,6 +268,17 @@ select:hover {
   }
 }
 
+.l-guide {
+  margin-top: 64px;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .l-guide {
+    margin-top: 0;
+    margin-top: initial;
+  }
+}
+
 .l-header {
   position: fixed;
   width: 100%;
@@ -1426,29 +1437,15 @@ select:hover {
   }
 }
 
-.p-guide__content {
-  margin-top: 70px;
-  margin-top: 4.375rem;
-}
-@media screen and (min-width: 768px) {
-  .p-guide__content {
-    margin-top: 0;
-    margin-top: initial;
-  }
-}
-
 .p-guide__content + .p-guide__content {
   border-top: 1px solid #000;
-  margin-top: 120px;
-  margin-top: 7.5rem;
-  padding-top: 80px;
-  padding-top: 5rem;
+  padding-top: 100px;
+  padding-top: 6.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-guide__content + .p-guide__content {
     border-top: none;
-    padding-top: 0;
-    padding-top: initial;
+    padding-top: 7.5rem;
   }
 }
 
@@ -1459,6 +1456,14 @@ select:hover {
 .p-guide__about {
   margin-top: 60px;
   margin-top: 3.75rem;
+  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__about {
+    padding-bottom: 0;
+    padding-bottom: initial;
+  }
 }
 
 .p-guide__credit-wrapper {

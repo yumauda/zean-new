@@ -11,19 +11,13 @@
     padding-top: rem(180);
   }
 }
-.p-guide__content {
-  margin-top: rem(70);
-  @include mq(md) {
-    margin-top: initial;
-  }
-}
+
 .p-guide__content + .p-guide__content {
   border-top: 1px solid #000;
-  margin-top: rem(120);
-  padding-top: rem(80);
+  padding-top: rem(100);
   @include mq(md) {
     border-top: none;
-    padding-top: initial;
+    padding-top: rem(120);
   }
 }
 .p-guide__title-wrapper {
@@ -31,6 +25,10 @@
 }
 .p-guide__about {
   margin-top: rem(60);
+  padding-bottom: rem(60);
+  @include mq(md) {
+    padding-bottom: initial;
+  }
 }
 .p-guide__credit-wrapper {
   display: flex;
@@ -39,8 +37,6 @@
 .p-guide__credit {
   font-weight: bold;
   margin-right: rem(20);
-}
-.p-guide__credit-text {
 }
 .p-guide-row {
   @include mq(md) {
