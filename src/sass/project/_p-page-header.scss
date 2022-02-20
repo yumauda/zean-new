@@ -9,12 +9,17 @@
   top: 0;
   left: 0;
   right: 0;
-  background: #efefef;
+  background: transparent;
   display: block;
   z-index: 9999;
+  transition: background-color 0.4s ease-out;
   @include mq(md) {
     display: none;
   }
+}
+.p-page-header__sp-nav.headerColorScroll {
+  background-color: #efefef;
+  transition: background-color 0.4s ease-out;
 }
 .p-page-header__sp-wrapper {
   display: flex;

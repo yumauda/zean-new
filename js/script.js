@@ -83,4 +83,13 @@ $('.select').on('change', function(){
   // onchange後にフォーカスしてるのが嫌な場合
   $this.blur();
 });
-
+$(function () {
+  $(window).on("scroll", function () {
+    const sliderHeight = $(".p-mv__title").height();
+    if (sliderHeight - 30 < $(this).scrollTop()) {
+      $(".p-page-header__sp-nav").addClass("headerColorScroll");
+    } else {
+      $(".p-page-header__sp-nav").removeClass("headerColorScroll");
+    }
+  });
+});

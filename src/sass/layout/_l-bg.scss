@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-bg {
+  background: #efefef;
+  @include mq(md) {
+    background: transparent;
+  }
+}
