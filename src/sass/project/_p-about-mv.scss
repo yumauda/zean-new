@@ -2,8 +2,8 @@
 
 .p-about-mv {
   background-color: $section-title-color;
-  height: 80vh;
-  padding: rem(120) 0;
+  padding-top: rem(120);
+  padding-bottom: rem(40);
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(40);
