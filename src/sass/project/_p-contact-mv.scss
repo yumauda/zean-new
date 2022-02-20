@@ -1,45 +1,50 @@
 @use "global" as *;
 
+@use "global" as *;
+
 .p-contact-mv {
-  position: relative;
-  padding-top: 129.7%;
-  background-image: url(../images/common/contact-mv-sp.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: rem(100);
-  @include mq(md) {
-    background-image: url(../images/common/contact-mv.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 24.28%;
-    margin-top: rem(60);
-    height: initial;
-  }
+  background-color: $section-title-color;
+  padding-top: rem(120);
+  padding-bottom: rem(40);
 }
 .p-contact-mv__content {
-  position: absolute;
-  content: "";
-  top: 22%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-left: rem(20);
+  padding-right: rem(20);
   @include mq(md) {
-    top: 55%;
-    left: 53%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    max-width: rem(650);
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .p-contact-mv__point1,
 .p-contact-mv__point2 {
   font-size: rem(54);
-  font-weight: 700;
+}
+.p-contact-mv__img {
+  max-width: rem(290);
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  @include mq(md){
+    margin-left: rem(20);
+  }
+}
+.p-contact-mv__img::before {
+  padding-top: 101%;
+  display: block;
+  content: "";
+}
+.p-contact-mv__img img {
   position: absolute;
-}
-.p-contact-mv__point1 {
-  top: -25%;
-  left: -12%;
-}
-.p-contact-mv__point2 {
-  top: -24%;
-  right: -13%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

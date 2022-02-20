@@ -1,47 +1,65 @@
 @use "global" as *;
 
 .p-guide-mv {
-  position: relative;
-  padding-top: 129.7%;
-  background-image: url(../images/common/guide-mv-sp.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: rem(100);
-  z-index: -1;
+  background-color: $section-title-color;
+  padding-top: rem(120);
+  padding-bottom: rem(40);
   @include mq(md) {
-    /* height: (400 / 1400) * 100vw; */
-    background-image: url(../images/common/guide-mv.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 24.28%;
-    margin-top: rem(60);
+    padding-top: rem(80);
+    padding-bottom: rem(40);
     height: initial;
   }
 }
 .p-guide-mv__content {
-  position: absolute;
-  content: "";
-  top: 23%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  text-align: center;
   @include mq(md) {
-    top: 50%;
-    left: 40%;
+    display: flex;
+    align-items: center;
+    max-width: rem(520);
+    width: 100%;
+    margin: 0 auto;
+    text-align: initial;
   }
+}
+.p-guide-mv__content-wrapper {
+  position: relative;
 }
 .p-guide-mv__point1,
 .p-guide-mv__point2 {
   font-size: rem(54);
-  font-weight: 700;
   position: absolute;
 }
 .p-guide-mv__point1 {
-  top: -6%;
-  left: -11%;
+  margin-left: rem(-24);
+  margin-top: rem(-8);
 }
 .p-guide-mv__point2 {
-  top: 43%;
-  right: 13%;
+  margin-left: rem(-96);
+  margin-top: rem(56);
+}
+.p-guide-mv__img {
+  max-width: rem(190);
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  @include mq(md) {
+    margin-left: rem(20);
+  }
+}
+.p-guide-mv__img::before {
+  padding-top: 142%;
+  display: block;
+  content: "";
+}
+.p-guide-mv__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

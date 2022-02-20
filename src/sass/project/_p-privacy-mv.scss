@@ -1,46 +1,65 @@
 @use "global" as *;
 
 .p-privacy-mv {
-  position: relative;
-  padding-top: 129.7%;
-  background-image: url(../images/common/privacy-mv-sp.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: rem(100);
-  z-index: -1;
+  background-color: $section-title-color;
+  padding-top: rem(120);
+  padding-bottom: rem(40);
   @include mq(md) {
-    background-image: url(../images/common/privacy-mv.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 24.28%;
-    margin-top: rem(60);
+    padding-top: rem(80);
+    padding-bottom: rem(40);
     height: initial;
   }
 }
 .p-privacy-mv__content {
-  position: absolute;
-  content: "";
-  top: 23%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  text-align: center;
   @include mq(md) {
-    top: 55%;
-    left: 40%;
+    display: flex;
+    align-items: center;
+    max-width: rem(520);
+    width: 100%;
+    margin: 0 auto;
+    text-align: initial;
   }
+}
+.p-privacy-mv__content-wrapper {
+  position: relative;
 }
 .p-privacy-mv__point1,
 .p-privacy-mv__point2 {
   font-size: rem(54);
-  font-weight: 700;
   position: absolute;
 }
 .p-privacy-mv__point1 {
-  top: -8%;
-  left: -12%;
+  margin-left: rem(-24);
+  margin-top: rem(-8);
 }
 .p-privacy-mv__point2 {
-  top: 45%;
-  right: 2%;
+  margin-left: rem(-32);
+  margin-top: rem(56);
+}
+.p-privacy-mv__img {
+  max-width: rem(190);
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  @include mq(md) {
+    margin-left: rem(20);
+  }
+}
+.p-privacy-mv__img::before {
+  padding-top: 114.3%;
+  display: block;
+  content: "";
+}
+.p-privacy-mv__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
