@@ -5,7 +5,7 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
-  margin-top: rem(100);
+  padding-top: rem(110);
   @include mq(md) {
     padding-top: (700 / 1400) * 100vw;
     height: initial;
