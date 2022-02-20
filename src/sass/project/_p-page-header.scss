@@ -17,6 +17,23 @@
     display: none;
   }
 }
+.p-page-header__sp-nav--gray {
+  padding-left: rem(30);
+  padding-right: rem(10);
+  padding-top: rem(20);
+  position: fixed;
+  height: rem(100);
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  display: block;
+  z-index: 9999;
+  transition: background-color 0.4s ease-out;
+  @include mq(md) {
+    display: none;
+  }
+}
 .p-page-header__sp-nav.headerColorScroll {
   background-color: #efefef;
   transition: background-color 0.4s ease-out;

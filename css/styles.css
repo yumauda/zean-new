@@ -2086,6 +2086,31 @@ select:hover {
   }
 }
 
+.p-page-header__sp-nav--gray {
+  padding-left: 30px;
+  padding-left: 1.875rem;
+  padding-right: 10px;
+  padding-right: 0.625rem;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  position: fixed;
+  height: 100px;
+  height: 6.25rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  display: block;
+  z-index: 9999;
+  -webkit-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+@media screen and (min-width: 768px) {
+  .p-page-header__sp-nav--gray {
+    display: none;
+  }
+}
+
 .p-page-header__sp-nav.headerColorScroll {
   background-color: #efefef;
   -webkit-transition: background-color 0.4s ease-out;
