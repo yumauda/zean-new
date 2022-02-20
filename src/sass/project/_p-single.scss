@@ -116,7 +116,9 @@
   transition: all 0.3s;
   padding: rem(20) 0;
   text-align: center;
-  margin-left: auto;
+  @include mq(md) {
+    margin-left: auto;
+  }
 }
 .p-single__enter:hover {
   opacity: 0.8;

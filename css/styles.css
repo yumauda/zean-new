@@ -2747,7 +2747,11 @@ select:hover {
   padding: 20px 0;
   padding: 1.25rem 0;
   text-align: center;
-  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-single__enter {
+    margin-left: auto;
+  }
 }
 
 .p-single__enter:hover {
@@ -3209,6 +3213,8 @@ select:hover {
           align-items: center;
   margin-top: 40px;
   margin-top: 2.5rem;
+  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-top-original__contact {
@@ -3252,6 +3258,17 @@ select:hover {
 @media screen and (min-width: 768px) {
   .p-top-original__contact-img img {
     left: 120%;
+  }
+}
+
+.p-top-original__contact-detail {
+  margin-left: 20px;
+  margin-left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-original__contact-detail {
+    margin-left: 0;
+    margin-left: initial;
   }
 }
 
