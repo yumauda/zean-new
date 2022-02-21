@@ -23,7 +23,10 @@
   }
 }
 .p-about__details-row + .p-about__details-row {
-  margin-top: rem(55);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(55);
+  }
 }
 .p-about__title {
   font-size: rem(14);

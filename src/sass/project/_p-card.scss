@@ -24,7 +24,7 @@
   }
 }
 .p-card:nth-child(n + 3) {
-  margin-top: rem(35);
+  margin-top: rem(16);
   @include mq(md) {
     margin-top: initial;
   }
@@ -49,7 +49,10 @@
   transform: translate(-50%, -50%);
 }
 .p-card__text {
-  margin-top: rem(20);
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: rem(20);
+  }
 }
 .p-card__price {
   text-align: right;

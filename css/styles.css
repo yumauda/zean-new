@@ -477,8 +477,13 @@ select:hover {
 }
 
 .p-about__details-row + .p-about__details-row {
-  margin-top: 55px;
-  margin-top: 3.4375rem;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-about__details-row + .p-about__details-row {
+    margin-top: 3.4375rem;
+  }
 }
 
 .p-about__title {
@@ -709,8 +714,8 @@ select:hover {
 }
 
 .p-card:nth-child(n+3) {
-  margin-top: 35px;
-  margin-top: 2.1875rem;
+  margin-top: 16px;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-card:nth-child(n+3) {
@@ -745,8 +750,13 @@ select:hover {
 }
 
 .p-card__text {
-  margin-top: 20px;
-  margin-top: 1.25rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-card__text {
+    margin-top: 1.25rem;
+  }
 }
 
 .p-card__price {
@@ -1600,8 +1610,13 @@ select:hover {
 }
 
 .p-guide__company-row + .p-guide__company-row {
-  margin-top: 55px;
-  margin-top: 3.4375rem;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__company-row + .p-guide__company-row {
+    margin-top: 3.4375rem;
+  }
 }
 
 .p-guide__company-title {
@@ -2059,6 +2074,7 @@ select:hover {
 
 .p-page-contact__content {
   margin: 0 auto;
+  display: inline-block;
 }
 
 .p-page-header__sp-nav {
@@ -3362,14 +3378,13 @@ select:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 40px;
-  margin-top: 2.5rem;
+  margin-top: 32px;
+  margin-top: 2rem;
   padding: 0 20px;
   padding: 0 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-top-original__contact {
-    margin-top: 3.75rem;
     max-width: 56.25rem;
     width: 100%;
   }
@@ -3450,6 +3465,7 @@ select:hover {
   font-size: 0.875rem;
   width: 130px;
   width: 8.125rem;
+  display: inline-block;
 }
 
 .p-top-original__contact-btn::before {

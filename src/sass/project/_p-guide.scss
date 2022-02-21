@@ -72,7 +72,10 @@
   }
 }
 .p-guide__company-row + .p-guide__company-row {
-  margin-top: rem(55);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(55);
+  }
 }
 .p-guide__company-title {
   font-size: rem(14);
