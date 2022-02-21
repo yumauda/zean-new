@@ -2099,11 +2099,9 @@ select:hover {
   top: 0;
   left: 0;
   right: 0;
-  background: transparent;
+  background: #efefef;
   display: block;
   z-index: 9999;
-  -webkit-transition: background-color 0.4s ease-out;
-  transition: background-color 0.4s ease-out;
 }
 @media screen and (min-width: 768px) {
   .p-page-header__sp-nav--gray {
