@@ -714,8 +714,8 @@ select:hover {
 }
 
 .p-card:nth-child(n+3) {
-  margin-top: 16px;
-  margin-top: 1rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-card:nth-child(n+3) {
